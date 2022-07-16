@@ -33,6 +33,7 @@ img {
     display: block;
 }
 
+
 h1,
 h2,
 h3,
@@ -192,7 +193,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image:linear-gradient( to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)),url(/images/hero.jpg)
+    background-image:linear-gradient( to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)),url(../images/hero.jpg)
     
 
 }
@@ -262,6 +263,7 @@ body {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 
 .section-team-tx {
@@ -351,6 +353,7 @@ border-radius: 50%;
     line-height: 1.9;
     letter-spacing: 0.06em;
     border-radius: 4px;
+    border: 0;
 
 }
 
@@ -378,10 +381,11 @@ border-radius: 50%;
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.03em;
-    border-radius: 4px;
-    border-color: #F5F4FA;
     display: inline-block;
     padding: 6px 22px;
+    border-radius: 4px;
+    border:0;
+    
 }
 
 
@@ -434,7 +438,13 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
+.client:last-child{
+    margin-right: 0;
+}
 .client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
     margin-right: 30px;
@@ -473,7 +483,10 @@ justify-content: center;
 .footer-container{
     display: flex;
 }
-.social-accede{
+.footer-address{
+    display: inline-block;
+}
+.social-title{
     display: flex;
     align-items: baseline;
     font-style: normal;
@@ -488,11 +501,10 @@ justify-content: center;
     margin-bottom: 20px;
 }
 
-.section.social-links{
+.social-links{
     display:inline-block;
     align-items: center;
     justify-content: center;
-    padding: 0 0;
     
 }
 .socials-link-accede{
@@ -515,6 +527,7 @@ justify-content: center;
 .socials-link-accede{
     margin-right:10px ;
 }
+
 .logo-link-address {
     font-family: var(--secondary-font), sans-serif;
     color: #FFFFFF;
